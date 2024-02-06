@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# set bar
+exec slstatus &
+
+exec picom &
+
+#set bg
+feh --bg-color black "$@"
+
+
+exec dwm
