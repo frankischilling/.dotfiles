@@ -1,0 +1,7 @@
+# Increase Brightness by 3%
+"brightnessctl set 3%+"
+   XF86MonBrightnessUp
+
+# Decrease Brightness by 3%
+"brightnessctl set 3%-"
+   XF86MonBrightnessDown
