@@ -39,6 +39,8 @@ exec slstatus &
 
 exec picom &
 
+exec dunst &
+
 #set bg
 feh --bg-color black "$@"
 
