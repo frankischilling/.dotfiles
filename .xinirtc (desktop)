@@ -1,13 +1,15 @@
-# desktop .xinirtc
 # set bg
 
 exec picom &
 
-#set monitor stuff
+# set monitor stuff
 xrandr --output DP-2 --primary --mode 1920x1080 --rate 240 --right-of HDMI-0
-xrandr --output HDMI-0 --mode 1600x900 --rate 60 --left-of DP-2
+xrandr --output HDMI-0 --mode 1600x900 --rate 60 --right-of DP-2
 
-#status bar
+# adjust mouse sensitivity for Razer DeathAdder Elite
+xinput set-prop 10 "Coordinate Transformation Matrix" 1.5 0 0 0 1.5 0 0 0 1
+
+# status bar
 slstatus &
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
@@ -18,6 +20,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 feh --bg-fill ~/daniel.png
-
 
 exec dwm
