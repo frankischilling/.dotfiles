@@ -100,6 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# set editor 
+export EDITOR=micro
+
 # set LFS vars
 export LFS=/mnt/lfs
 export LC_ALL=POSIX
