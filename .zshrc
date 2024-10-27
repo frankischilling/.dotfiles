@@ -99,3 +99,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# set LFS vars
+export LFS=/mnt/lfs
+export LC_ALL=POSIX
+export LFS_TGT=$(uname -m)-lfs-linux-gnu
+export PATH=/tools/bin:$PATH
+
